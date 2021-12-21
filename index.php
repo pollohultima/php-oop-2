@@ -51,9 +51,9 @@ class Premium extends Customer
     public $points;
     public $grade;
    
-    function __construct($name, $username, $email, float $points, string $grade)
+    function __construct($name, $username, $email, $creditcard, float $points, string $grade)
     {
-        parent::__construct($name, $username, $email);
+        parent::__construct($name, $username, $email, $creditcard);
         $this->points = $points;
         $this->grade = $grade;
     }
